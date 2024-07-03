@@ -1,0 +1,13 @@
+/* Para que estas variáveis estejam disponíveis em todo site */
+:root { 
+
+    --primary-color: #61259E;
+
+    /* Cores de plano de fundo */
+    --bg-color: #1F2021;
+
+    /* Cor do texto */
+    --text-color: #fff;
+
+    --black-color: #161617;
+}
