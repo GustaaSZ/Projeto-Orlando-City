@@ -1,0 +1,22 @@
+/* Acessando o id hero */
+#hero {
+    /* adicionando cor de fundo ao header */
+    background-color: var(--bg-color);
+    height: 100vh;
+    /* Acessando seu fillho direto header com '& >' ou '>'*/
+    > header{
+        /* Organiza na horzontal */
+        display: flex;
+
+        /* Espaço entre os icons */
+        justify-content: space-between;
+
+        /* Borda de 20px em toda a pag */
+        padding: 20px;
+        
+        /* Adicionando degradê no topo do header */
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 41.12%, rgba(0, 0, 0, 0.00) 100%);
+
+
+    }
+}
