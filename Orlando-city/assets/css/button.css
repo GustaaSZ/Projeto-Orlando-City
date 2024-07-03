@@ -1,0 +1,33 @@
+/* Aplique para toda class que comece com btn */
+[class^='btn-'] {
+
+    display: flex;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    /* Borda arredondada nos 4 pixels */
+    border-radius: 4px;
+
+    /* Estilo de ação para quando pressionar o botão */
+    :active{
+        transform: translateY(1px);
+    }
+
+    /* Aplicando a regra para todos os buttons que tenham a tag btn + primary-fill (roxo) */
+    &.btn-primary-fill{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 12px 28px;
+    }
+
+    /* Aplicando a regra para todos os buttons que tenham a tag btn + white 10 */
+    &.btn-white-10{
+        background-color: var(--white10-color);
+        color: var(--text-color);
+        padding: 12px;
+    }
+
+}
