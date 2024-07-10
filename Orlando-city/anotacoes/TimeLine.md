@@ -2,7 +2,7 @@
 - [X] Fazer o header mobile hero
 - [X] Fazer o merge do PR header mobile hero na branch main
 
-## 04/07/24 - :
+## 10/07/24 - :
 - [ ] Header Destktop Hero
 - [ ] Conteúdo do Hero Mobile
 - [ ] Conteúdo do Hero Desktop
