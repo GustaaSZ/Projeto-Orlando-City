@@ -1,14 +1,16 @@
 /* Acessando o id hero */
 #hero {
+
     /* adicionando cor de fundo ao header */
     background-color: var(--bg-color);
     height: 100vh;
+
     /* Acessando seu fillho direto header com '& >' ou '>'*/
     > header{
         /* Organiza na horzontal */
         display: flex;
 
-        /* Espaço entre os icons */
+        /* Espaço entre os icons  do header*/
         justify-content: space-between;
 
         /* Borda de 20px em toda a pag */
@@ -17,6 +19,57 @@
         /* Adicionando degradê no topo do header */
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 41.12%, rgba(0, 0, 0, 0.00) 100%);
 
+        /* Estilizando a div */
+        > div {
+            display: flex;
+            align-items: center;
+        }
+        /* Estilizando os links de nav */
+        & nav.links {
+            & li a {
+                display: flex;
+                /* Colocando a cor das fontes dentro do hero */
+                color: var(--text-color);
+                /* Retirando o sublinhado do texto */
+                text-decoration: none;
+                /* Tamanha fonte */
+                font-size: 14px;
+                /* Sistanciamento entre os elementos */
+                padding: 3vw; 
+                /* add deslocamento ao clicar no botão */
+                &:active {
+                    transform: translateY(1px);
+                }
+            }
+        }
+
+        & nav ul {
+            display: none;
+            align-items: center;
+            /* Espaço entre eles */
+            gap: 10px;
+            /* Tira as bolinhas de marcação do item */
+            list-style: none; 
+            margin: 0;
+            padding: 0;
+            /* Colocando a fonte em negrito */
+            font-weight: bold;
+            /*  */
+            & .social {
+                display: flex;
+                padding: 8px;
+            }
+        }
+
+        /* Qual media o site está sendo acessado? */
+        @media (min-width: 992px) {
+            & nav ul{ 
+                display: flex;
+            }
+            .btn-menu {
+                display: none;
+            }
+        }
 
     }
 }

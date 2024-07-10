@@ -12,7 +12,7 @@
     border-radius: 4px;
 
     /* Estilo de ação para quando pressionar o botão */
-    :active{
+    &:active{
         transform: translateY(1px);
     }
 

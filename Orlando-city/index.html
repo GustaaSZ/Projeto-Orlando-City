@@ -11,16 +11,41 @@
     
     <div id ="hero">
         <header>
-            <!-- Criando um botão clicável para a logo da pag -->
-            <a href="/">
-                <img src="assets/img/Orlando-City-Logo.svg" alt="Logo Orlando City"/>
-            </a>
+            <!-- 1º elemento do header (dentro da div) -->
+            <div>
+                <!-- Criando um botão clicável para a logo da pag -->
+                <a href="/">
+                    <img src="assets/img/Orlando-City-Logo.svg" alt="Logo Orlando City"/>
+                </a>
 
-            <!-- Criando um botão para o icon de menu, controlado por javascript -->
-            <button type="button" class="btn-menu">
-                <img src="assets/img/Icon-Menu.svg" alt="Icone Menu"/>
-            </button>
+                <!-- Criando os links para o header desktop heo -->
+                <nav class="links">
+                    <ul>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 2º elemento do header (dentro da div) -->
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="btn-primary-fill">Login</a></li>
+                        <li><a class="social" href="#"><img src="assets/img/Icon-instagram 1.svg" alt="Icon-instagram"/><a></li>
+                        <li><a class="social" href="#"><img src="assets/img/Icon-youtube 1.svg" alt="Icon-youtube"/></a></li>
+                        <li><a class="social" href="#"><img src="assets/img/Icon-facebook 1.svg" alt="Icon-facebook"/></a></li>
+                    </ul>
+                </nav>
             
+                <!-- Criando um botão para o icon de menu, controlado por javascript -->
+                <button type="button" class="btn-menu">
+                    <img src="assets/img/Icon-Menu.svg" alt="Icone Menu"/>
+                </button>
+            </div>
+
         </header>
     </div>
     <script src="assets/js/script.js" > </script>
