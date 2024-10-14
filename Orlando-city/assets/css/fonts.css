@@ -1,4 +1,4 @@
 @font-face {
-    font-family: Bebas;
-    src: url("Orlando-city/assets/font/BebasNeue-Regular.ttf");
+    font-family: 'Bebas';
+    src: url("../font/BebasNeue-Regular.ttf") format('truetype');
 }

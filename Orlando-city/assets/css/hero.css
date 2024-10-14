@@ -4,6 +4,15 @@
     /* adicionando cor de fundo ao header */
     background-color: var(--bg-color);
     height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* importa a img */
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    /* Ajusta a img pra sempre mostrar o centro */
+    background-position: center;
 
     /* Acessando seu fillho direto header com '& >' ou '>'*/
     > header{
@@ -36,6 +45,9 @@
                 font-size: 14px;
                 /* Sistanciamento entre os elementos */
                 padding: 3vw; 
+                &:hover {
+                    font-weight: 300;
+                } 
                 /* add deslocamento ao clicar no botão */
                 &:active {
                     transform: translateY(1px);
@@ -71,5 +83,42 @@
             }
         }
 
+    }
+
+    >section {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 50vh;
+        width: 360px;
+        /* Adicionando degradê no topo do header */
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 41.12%, rgba(0, 0, 0, 0.00) 100%);
+        width: 100%;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            >h1 {
+                font-size: 40px;
+                font-family: 'Bebas';
+                margin: 0;
+            }
+            >p {
+                font-size: 22px;
+                font-family: 'Bebas';
+                margin: 0;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                gap: 20px;
+                >button {
+                    font-family: 'Bebas';
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
